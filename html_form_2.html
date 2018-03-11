@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Formulir Online </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="html_form_2.css">
+    
+  </head>
+
+  <body>
+  <form>
+    <div class="background">
+    <div class="backdrop">
+    <div class="judul">
+  		<img src="logo1.png" align="center" width="100" height="100">
+      <h1>Formulir Pendaftaran Perusahaan TELKOMSEL</h1>
+      <hr><br></div>
+  	   <p class="sansserif"> 
+          <label for="nama_L">Nama Lengkap :  </label>
+          <input type="text" id="nama_L" value="Risma Putri Auliasari"><br><br>
+  		    <label for="nama_P">Nama Panggilan :  </label>
+          <input type="text" id="nama_P" value="Risma"><br><br>
+  		    <label for="ttl">Tempat, Tanggal Lahir :  </label>
+          <input type="text" id="ttl" value="Madiun, 19 Juli 1998"><br><br>
+  		    <label>Gender :</label><br>
+  		    <input type="radio" name="gender">Laki-laki<br>
+  		    <input type="radio" name="gender" checked >Perempuan<br><br>
+          <label>Alamat : </label><br>
+          <textarea cols="50" rows="5">Jln. Sigura-gura gang 1 no.04 Lowokwaru, Malang</textarea><br><br>
+          <label for="no">No. Hp :</label>
+          <input type="text" name="no" value="083846728593"><br><br>
+          <label for="email">Email :</label>
+          <input type="textfield" id="email" value="rismaput16@gmail.com" ><br><br>
+          <!--mengecek email dengan Javascript
+          <button onclick="myFungtion()">Check</button>-->
+          <label>Hobby : </label><br>
+          <textarea cols="50" rows="5">Menyanyi, menari, makan dan bermain sosial media</textarea><br><br>
+          <label>Agama :</label>
+            <select>
+                <option>Islam</option>
+                <option>Kristen</option>
+                <option>Kalotik</option>
+                <option>Hindu</option>
+                <option>Budha</option>
+                <option>Kong Hu Cu</option>
+              </select><br><br>
+          <label>Pengalaman Organisasi : </label><br>
+          <textarea cols="50" rows="5">Anggota OSIS di SMA. Anggota Paskibraka. Panitia Ospek Fakultas dan Panitia Ospek Prodi</textarea><br><br>
+          <label>Riwayat Pendidikan :</label><br>
+          <input type="checkbox" name="peminatan" value="0" checked>TK<br>
+          <input type="checkbox" name="peminatan" value="1" checked>SD<br>
+          <input type="checkbox" name="peminatan" value="2" checked>SMP<br>
+          <input type="checkbox" name="peminatan" value="3" checked>SMA<br>
+          <input type="checkbox" name="peminatan" value="4">Diloma<br>
+          <input type="checkbox" name="peminatan" value="5" checked>Sarjana<br>
+          <input type="checkbox" name="peminatan" value="6">Pascasarjana<br><br>
+          <label>VISI anda : </label><br>
+          <textarea cols="50" rows="5">Visi saya dalam bekerja adalah “Menjadi pegawai yang profesional, tangguh, bertanggung jawab, dan peduli secara sosial pada perusahaan”</textarea><br>
+          <br>
+          <label>Misi anda :</label><br>
+          <textarea cols="50" rows="5"> Beberapa misi saya dalam bekerja adalah:
+          a. Selalu memperbarui karakter pribadi menjadi lebih profesional, komitmen, bertanggung jawab, dan setia pada perusahaan.
+          b. Mengembangkan perusahaan menjadi lebih maju sesuai kapasitas saya di bidang pekerjaan yang saya emban.</textarea><br>
+          <br>
+          <label>Motifasi anda :</label><br>
+          <textarea cols="50" rows="5">Saya termasuk orang yang mandiri dan berorientasi pada hasil sehingga saya senang sekali bila berhasil mencapai target yang ditentukan. Di samping itu, saya juga cukup bisa melakukan manajemen waktu untuk mencapai tujuan. Pada pekerjaan terakhir saya, target yang harus dicapai sangatlah agresif, namun saya, manajer saya, serta tim dapat mencapai semua target yang telah ditetapkan.</textarea><br>
+          <br>
+          <label for="foto">Lampirkan foto anda :</label><br>
+          <form action="/action_page.php">
+            <input type="file" name="pic" accept="image/*" id="foto">
+            <input type="submit"><br><br>
+            <img src="2.jpg" height="120" width="95"><br>
+          <input type="submit" value="Kirim Data">
+
+          <p id="demo"></p>
+          <script>
+            fungtion myFungtion(){
+              var x = document.getElementById("email").value;
+              document.getElementById("demo").innerHTML = x;            }
+          </script>
+      </p>
+  	 </form>
+      </div>
+      </div>
+  </body>
+  </html>
